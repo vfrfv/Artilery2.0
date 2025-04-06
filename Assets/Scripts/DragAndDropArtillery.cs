@@ -14,20 +14,38 @@ namespace DragAndDrop
         [SerializeField] private TimeController _timeController;
 
         [SerializeField] private Spawnlocation _spawnLocation;
+        [SerializeField] private Spawnlocation _spawnLocation2;
 
         private Camera _mainCamera;
         private Image _spritArtilleryInstance;
+        private bool _isActive = false;
+        private bool _isReplay = false;
 
         private void Awake()
         {
             _mainCamera = Camera.main;
         }
 
+        public void Activate()
+        {
+            _isActive = true;
+        }
+
         public void OnBeginDrag(PointerEventData eventData)
         {
+            if (_isActive == false) return;
+
             _spritArtilleryInstance = Instantiate(_spritArtillery, _spritArtillery.transform.parent);
             _spritArtilleryInstance.gameObject.SetActive(true);
-            _spawnLocation.gameObject.SetActive(true);
+
+            if (_isReplay == false)
+            {
+                _spawnLocation.gameObject.SetActive(true);
+            }
+            else
+            {
+                _spawnLocation2.gameObject.SetActive(true);
+            }
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -45,9 +63,19 @@ namespace DragAndDrop
                 _timeController.PlayGame();
 
                 _spritArtilleryInstance.gameObject.SetActive(false);
-                _spawnLocation.gameObject.SetActive(false);
+
+                if (_isReplay == false)
+                {
+                    _spawnLocation.gameObject.SetActive(false);
+                }
+                else
+                {
+                    _spawnLocation2.gameObject.SetActive(false);
+                }
 
                 TurnHands();
+                _isReplay = true;
+                _isActive = false;
             }
 
             _spritArtilleryInstance.gameObject.SetActive(false);

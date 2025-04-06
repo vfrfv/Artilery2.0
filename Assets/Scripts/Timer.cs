@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private Text _timerText;
+    //[SerializeField] private Text _timerText;
     [SerializeField] private GameObject _icons;
 
     private float _timeElapsed;
@@ -13,12 +13,18 @@ public class Timer : MonoBehaviour
     private bool _isPausing1 = false;
     private bool _isPausing2 = false;
     private bool _isPausing3 = false;
+    private bool _isPausing4 = false;
+    private bool _isPausing5 = false;
+    private bool _isPausing6 = false;
 
     public float TimeElapsed => _timeElapsed;
 
     public event Action StopVideo1;
     public event Action StopVideo2;
     public event Action StopVideo3;
+    public event Action StopVideo4;
+    public event Action StopVideo5;
+    public event Action StopVideo6;
 
     private void Start()
     {
@@ -64,7 +70,40 @@ public class Timer : MonoBehaviour
                 _isPausing3 = true;
             }
         }
+
+        if (_timeElapsed >= 17.7f)
+        {
+            if (_isPausing4 == false)
+            {
+                StopVideo4?.Invoke();
+                _isPausing4 = true;
+            }
+        }
+
+        if (_timeElapsed >= 20.1f)
+        {
+            if (_isPausing5 == false)
+            {
+                StopVideo5?.Invoke();
+                _isPausing5 = true;
+            }
+        }
+
+        if (_timeElapsed >= 25.1f)
+        {
+            if (_isPausing6 == false)
+            {
+                StopVideo6?.Invoke();
+                _isPausing6 = true;
+            }
+        }
+
+        if (_timeElapsed >= 28.9f)
+        {
+            _icons.gameObject.SetActive(false);
+        }
     }
+
 
     public void StartTimer()
     {
@@ -80,6 +119,6 @@ public class Timer : MonoBehaviour
     {
         int seconds = (int)_timeElapsed;
         int milliseconds = (int)((_timeElapsed - seconds) * 1000);
-        _timerText.text = string.Format("{0:00}:{1:000}", seconds, milliseconds);
+        //_timerText.text = string.Format("{0:00}:{1:000}", seconds, milliseconds);
     }
 }
