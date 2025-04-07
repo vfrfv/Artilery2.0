@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RidingHand : MonoBehaviour
 {
-    [SerializeField] private float _speed = 2f; // Скорость движения
-    [SerializeField] private float _height = 50f; // Амплитуда движения
+    [SerializeField] private float _speed = 2f;
+    [SerializeField] private float _height = 50f;
 
     private Vector3 _startPos;
 

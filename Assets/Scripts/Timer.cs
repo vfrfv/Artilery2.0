@@ -1,10 +1,8 @@
 using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    //[SerializeField] private Text _timerText;
     [SerializeField] private GameObject _icons;
 
     private float _timeElapsed;
@@ -71,7 +69,7 @@ public class Timer : MonoBehaviour
             }
         }
 
-        if (_timeElapsed >= 17.7f)
+        if (_timeElapsed >= 17.6f)
         {
             if (_isPausing4 == false)
             {
@@ -89,7 +87,7 @@ public class Timer : MonoBehaviour
             }
         }
 
-        if (_timeElapsed >= 25.1f)
+        if (_timeElapsed >= 25.5f)
         {
             if (_isPausing6 == false)
             {
@@ -98,7 +96,7 @@ public class Timer : MonoBehaviour
             }
         }
 
-        if (_timeElapsed >= 28.9f)
+        if (_timeElapsed >= 28.7f)
         {
             _icons.gameObject.SetActive(false);
         }
@@ -119,6 +117,5 @@ public class Timer : MonoBehaviour
     {
         int seconds = (int)_timeElapsed;
         int milliseconds = (int)((_timeElapsed - seconds) * 1000);
-        //_timerText.text = string.Format("{0:00}:{1:000}", seconds, milliseconds);
     }
 }

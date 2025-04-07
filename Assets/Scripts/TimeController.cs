@@ -50,19 +50,6 @@ public class TimeController : MonoBehaviour
         _timer.StartTimer();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Stop();
-        }
-
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            Play();
-        }
-    }
-
     public void PlayGame()
     {
         Play();
