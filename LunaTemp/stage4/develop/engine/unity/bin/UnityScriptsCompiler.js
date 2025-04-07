@@ -504,7 +504,7 @@ if ( TRACE ) { TRACE( "Timer#Update", this ); }
                     !Bridge.staticEquals(this.StopVideo3, null) ? this.StopVideo3() : null;
                     this._isPausing3 = true;
                 }
-                if (this._timeElapsed >= 17.7 && !this._isPausing4) {
+                if (this._timeElapsed >= 17.6 && !this._isPausing4) {
                     !Bridge.staticEquals(this.StopVideo4, null) ? this.StopVideo4() : null;
                     this._isPausing4 = true;
                 }
@@ -512,7 +512,7 @@ if ( TRACE ) { TRACE( "Timer#Update", this ); }
                     !Bridge.staticEquals(this.StopVideo5, null) ? this.StopVideo5() : null;
                     this._isPausing5 = true;
                 }
-                if (this._timeElapsed >= 25.2 && !this._isPausing6) {
+                if (this._timeElapsed >= 25.5 && !this._isPausing6) {
                     !Bridge.staticEquals(this.StopVideo6, null) ? this.StopVideo6() : null;
                     this._isPausing6 = true;
                 }
