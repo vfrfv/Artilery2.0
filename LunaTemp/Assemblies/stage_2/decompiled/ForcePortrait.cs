@@ -2,31 +2,40 @@ using UnityEngine;
 
 public class ForcePortrait : MonoBehaviour
 {
-	public RectTransform canvasRoot;
+	[SerializeField]
+	private GameObject _canvas1;
+
+	[SerializeField]
+	private GameObject _canvas2;
+
+	private bool _isPortrait;
 
 	private void Start()
 	{
-		Screen.orientation = ScreenOrientation.Portrait;
-		Screen.autorotateToLandscapeLeft = false;
-		Screen.autorotateToLandscapeRight = false;
-		Screen.autorotateToPortraitUpsideDown = false;
-		Screen.autorotateToPortrait = true;
-		Screen.orientation = ScreenOrientation.AutoRotation;
+		CheckOrientation();
 	}
 
 	private void Update()
 	{
-		if (Screen.width > Screen.height)
+		if ((_isPortrait && Screen.width > Screen.height) || (!_isPortrait && Screen.height > Screen.width))
 		{
-			canvasRoot.rotation = Quaternion.Euler(0f, 0f, 90f);
+			CheckOrientation();
+		}
+	}
+
+	private void CheckOrientation()
+	{
+		if (Screen.height > Screen.width)
+		{
+			_isPortrait = true;
+			_canvas1.SetActive(true);
+			_canvas2.SetActive(false);
 		}
 		else
 		{
-			canvasRoot.rotation = Quaternion.identity;
-		}
-		if (Screen.orientation != ScreenOrientation.Portrait && Screen.orientation != ScreenOrientation.AutoRotation)
-		{
-			Screen.orientation = ScreenOrientation.Portrait;
+			_isPortrait = false;
+			_canvas1.SetActive(false);
+			_canvas2.SetActive(true);
 		}
 	}
 }

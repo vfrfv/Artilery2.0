@@ -6,6 +6,9 @@ public class Timer : MonoBehaviour
 	[SerializeField]
 	private GameObject _icons;
 
+	[SerializeField]
+	private GameObject _icons2;
+
 	private float _timeElapsed;
 
 	private bool _isRunning = false;
@@ -51,6 +54,7 @@ public class Timer : MonoBehaviour
 		if (_timeElapsed >= 3.7f)
 		{
 			_icons.gameObject.SetActive(true);
+			_icons2.gameObject.SetActive(true);
 		}
 		if (_timeElapsed >= 5.3f && !_isPausing1)
 		{
@@ -85,6 +89,7 @@ public class Timer : MonoBehaviour
 		if (_timeElapsed >= 28.7f)
 		{
 			_icons.gameObject.SetActive(false);
+			_icons2.gameObject.SetActive(false);
 		}
 	}
 

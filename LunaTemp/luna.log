@@ -19,37 +19,51 @@ Diagnostics gathered successfully
 © Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
 
 
-D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(15,41): warning CS0649: Полю "TimeController._pumping2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(20,41): warning CS0649: Полю "TimeController._pumping2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
 
-D:\UnityPri\Artilery2.0\Assets\Scripts\UI\ThrobbingHand.cs(9,45): warning CS0649: Полю "ThrobbingHand._timeController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(7,36): warning CS0649: Полю "TimeController._timer" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-D:\UnityPri\Artilery2.0\Assets\Scripts\Timer.cs(6,41): warning CS0649: Полю "Timer._icons" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(17,51): warning CS0649: Полю "TimeController._dragAndDropArtillery1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(10,41): warning CS0649: Полю "TimeController._slidingHand1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(18,51): warning CS0649: Полю "TimeController._dragAndDropArtillery2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-D:\UnityPri\Artilery2.0\Assets\Scripts\DragAndDropArtillery.cs(13,47): warning CS0649: Полю "DragAndDropArtillery._ridingHands" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(14,41): warning CS0649: Полю "TimeController._pumping1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(19,51): warning CS0649: Полю "TimeController._dragAndDropArtillery3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\ForcePortrait.cs(5,41): warning CS0649: Полю "ForcePortrait._canvas1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(26,51): warning CS0649: Полю "TimeController._dragAndDropArtillery2g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
 D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(8,42): warning CS0649: Полю "TimeController._videoPlayer" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(14,41): warning CS0649: Полю "TimeController._slidingHand2g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(24,51): warning CS0649: Полю "TimeController._dragAndDropArtillery1g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(9,42): warning CS0649: Полю "TimeController._videoPlayer2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(7,36): warning CS0649: Полю "TimeController._timer" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(27,51): warning CS0649: Полю "TimeController._dragAndDropArtillery3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(11,41): warning CS0649: Полю "TimeController._slidingHand1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
 D:\UnityPri\Artilery2.0\Assets\Scripts\UI\ThrobbingHand.cs(10,41): warning CS0649: Полю "ThrobbingHand._pumpingButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-
-D:\UnityPri\Artilery2.0\Assets\Scripts\DragAndDropArtillery.cs(16,48): warning CS0649: Полю "DragAndDropArtillery._spawnLocation" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(12,41): warning CS0649: Полю "TimeController._slidingHand3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-D:\UnityPri\Artilery2.0\Assets\Scripts\DragAndDropArtillery.cs(14,49): warning CS0649: Полю "DragAndDropArtillery._timeController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-D:\UnityPri\Artilery2.0\Assets\Scripts\DragAndDropArtillery.cs(17,48): warning CS0649: Полю "DragAndDropArtillery._spawnLocation2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-D:\UnityPri\Artilery2.0\Assets\Scripts\DragAndDropArtillery.cs(12,40): warning CS0649: Полю "DragAndDropArtillery._spritArtillery" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
-D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(11,41): warning CS0649: Полю "TimeController._slidingHand2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(23,51): warning CS0649: Полю "TimeController._dragAndDropArtillery1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\DragAndDropArtillery.cs(13,47): warning CS0649: Полю "DragAndDropArtillery._ridingHands" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
 D:\UnityPri\Artilery2.0\Assets\Scripts\UI\ThrobbingHand.cs(8,37): warning CS0649: Полю "ThrobbingHand._button" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+
+D:\UnityPri\Artilery2.0\Assets\Scripts\Timer.cs(6,41): warning CS0649: Полю "Timer._icons" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\UI\ThrobbingHand.cs(9,45): warning CS0649: Полю "ThrobbingHand._timeController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(21,41): warning CS0649: Полю "TimeController._pumping2g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(12,41): warning CS0649: Полю "TimeController._slidingHand1g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(28,51): warning CS0649: Полю "TimeController._dragAndDropArtillery3g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(16,41): warning CS0649: Полю "TimeController._slidingHand3g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\Timer.cs(7,41): warning CS0649: Полю "Timer._icons2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(25,51): warning CS0649: Полю "TimeController._dragAndDropArtillery2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\ForcePortrait.cs(6,41): warning CS0649: Полю "ForcePortrait._canvas2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(15,41): warning CS0649: Полю "TimeController._slidingHand3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\DragAndDropArtillery.cs(17,48): warning CS0649: Полю "DragAndDropArtillery._spawnLocation2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(19,41): warning CS0649: Полю "TimeController._pumping1g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\DragAndDropArtillery.cs(12,40): warning CS0649: Полю "DragAndDropArtillery._spritArtillery" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(18,41): warning CS0649: Полю "TimeController._pumping1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\DragAndDropArtillery.cs(16,48): warning CS0649: Полю "DragAndDropArtillery._spawnLocation" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+
+D:\UnityPri\Artilery2.0\Assets\Scripts\DragAndDropArtillery.cs(14,49): warning CS0649: Полю "DragAndDropArtillery._timeController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
+D:\UnityPri\Artilery2.0\Assets\Scripts\TimeController.cs(13,41): warning CS0649: Полю "TimeController._slidingHand2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null.
 
 Usercode compiled successfully!
 .NET Core 3 runtime not found.
 .NET Core 3 runtime not found.
 code-v2:compose complete successfully!
-Found a stored user info, but it is no longer valid.
-Permissions were validated successfully.
+Authorized using stored user info.
 Версия MSBuild 17.11.9+a69bbaaf5 для .NET Framework
 
-Сборка начата 07.04.2025 14:57:55.
+Сборка начата 10.04.2025 15:34:46.
 
 
 
@@ -100,8 +114,6 @@ CoreClean:
 
   Файл "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml" удаляется.
 
-  Файл "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll" удаляется.
-
   Файл "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll" удаляется.
 
   Файл "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache" удаляется.
@@ -118,70 +130,94 @@ GenerateTargetFrameworkMonikerAttribute:
 Целевой объект "GenerateTargetFrameworkMonikerAttribute" пропускается, так как все выходные файлы актуальны по отношению к входным.
 
 CoreCompile:
-  C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2022;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2022_3;UNITY_2022_3_7 /highentropyva+ /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ForcePortrait.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\Properties\AssemblyInfo.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\RidingHand.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\Spawnlocation.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ThrobbingHand.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\Timer.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
-
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\Timer.cs(7,21): warning CS0649: Полю "Timer._icons" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(16,24): warning CS0649: Полю "DragAndDropArtillery._ridingHands" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(32,31): warning CS0649: Полю "TimeController._dragAndDropArtillery2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ThrobbingHand.cs(16,25): warning CS0649: Полю "ThrobbingHand._timeController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2022;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2022_3;UNITY_2022_3_7 /highentropyva+ /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll /reference:D:\Luna\PA\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop
+\DragAndDropArtillery.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ForcePortrait.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\Properties\AssemblyInfo.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\RidingHand.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\Spawnlocation.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ThrobbingHand.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\Timer.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
 
 D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(8,16): warning CS0649: Полю "TimeController._timer" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(23,21): warning CS0649: Полю "TimeController._pumping1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(13,17): warning CS0649: Полю "DragAndDropArtillery._spritArtillery" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(59,31): warning CS0649: Полю "TimeController._dragAndDropArtillery3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(17,21): warning CS0649: Полю "TimeController._slidingHand2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ForcePortrait.cs(9,21): warning CS0649: Полю "ForcePortrait._canvas2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(26,21): warning CS0649: Полю "TimeController._pumping2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(47,31): warning CS0649: Полю "TimeController._dragAndDropArtillery1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(20,21): warning CS0649: Полю "TimeController._slidingHand3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(22,25): warning CS0649: Полю "DragAndDropArtillery._spawnLocation" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ThrobbingHand.cs(16,25): warning CS0649: Полю "ThrobbingHand._timeController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(44,21): warning CS0649: Полю "TimeController._pumping2g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
 D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ThrobbingHand.cs(13,17): warning CS0649: Полю "ThrobbingHand._button" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(14,21): warning CS0649: Полю "TimeController._slidingHand1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(20,21): warning CS0649: Полю "TimeController._slidingHand1g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ThrobbingHand.cs(19,21): warning CS0649: Полю "ThrobbingHand._pumpingButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(53,31): warning CS0649: Полю "TimeController._dragAndDropArtillery2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ForcePortrait.cs(6,21): warning CS0649: Полю "ForcePortrait._canvas1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(14,22): warning CS0649: Полю "TimeController._videoPlayer2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(22,25): warning CS0649: Полю "DragAndDropArtillery._spawnLocation" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(26,21): warning CS0649: Полю "TimeController._slidingHand2g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(56,31): warning CS0649: Полю "TimeController._dragAndDropArtillery2g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(38,21): warning CS0649: Полю "TimeController._pumping1g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\Timer.cs(10,21): warning CS0649: Полю "Timer._icons2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(23,21): warning CS0649: Полю "TimeController._slidingHand2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(32,21): warning CS0649: Полю "TimeController._slidingHand3g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(35,21): warning CS0649: Полю "TimeController._pumping1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(41,21): warning CS0649: Полю "TimeController._pumping2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(13,17): warning CS0649: Полю "DragAndDropArtillery._spritArtillery" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(16,24): warning CS0649: Полю "DragAndDropArtillery._ridingHands" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(29,21): warning CS0649: Полю "TimeController._slidingHand3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\Timer.cs(7,21): warning CS0649: Полю "Timer._icons" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scrip
+ts\Scripts.csproj]
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(25,25): warning CS0649: Полю "DragAndDropArtillery._spawnLocation2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(50,31): warning CS0649: Полю "TimeController._dragAndDropArtillery1g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
 D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(19,26): warning CS0649: Полю "DragAndDropArtillery._timeController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(35,31): warning CS0649: Полю "TimeController._dragAndDropArtillery3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(29,31): warning CS0649: Полю "TimeController._dragAndDropArtillery1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(25,25): warning CS0649: Полю "DragAndDropArtillery._spawnLocation2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
 D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(11,22): warning CS0649: Полю "TimeController._videoPlayer" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ThrobbingHand.cs(19,21): warning CS0649: Полю "ThrobbingHand._pumpingButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(62,31): warning CS0649: Полю "TimeController._dragAndDropArtillery3g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(17,21): warning CS0649: Полю "TimeController._slidingHand1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
   CompilerServer: server - server processed compilation - Scripts
 
 _CopyFilesMarkedCopyLocal:
-  Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
 
   Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
-  Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+
   Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll".
 
-  Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
-
   Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+  Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+  Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+
+  Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
 
   Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+
   Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
 
-  Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
   Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
 
   Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
 
-  Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
+  Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
 
   Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
 
+  Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
   Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
 
   Копирование файла из "D:\Luna\PA\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.42-luna\lib\net40\Bridge.xml" в "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
@@ -222,40 +258,51 @@ BridgeNetCompilerTask:
 Сборка проекта "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" завершена (целевые объекты Rebuild).
 
 
+
 Сборка успешно завершена.
 
 
 
 "D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (целевой объект Rebuild ) (1) ->
 (Целевой объект CoreCompile) -> 
-
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\Timer.cs(7,21): warning CS0649: Полю "Timer._icons" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(16,24): warning CS0649: Полю "DragAndDropArtillery._ridingHands" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(32,31): warning CS0649: Полю "TimeController._dragAndDropArtillery2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ThrobbingHand.cs(16,25): warning CS0649: Полю "ThrobbingHand._timeController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(8,16): warning CS0649: Полю "TimeController._timer" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(23,21): warning CS0649: Полю "TimeController._pumping1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(13,17): warning CS0649: Полю "DragAndDropArtillery._spritArtillery" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(17,21): warning CS0649: Полю "TimeController._slidingHand2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(26,21): warning CS0649: Полю "TimeController._pumping2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(20,21): warning CS0649: Полю "TimeController._slidingHand3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(22,25): warning CS0649: Полю "DragAndDropArtillery._spawnLocation" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(59,31): warning CS0649: Полю "TimeController._dragAndDropArtillery3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ForcePortrait.cs(9,21): warning CS0649: Полю "ForcePortrait._canvas2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\template
+s\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(47,31): warning CS0649: Полю "TimeController._dragAndDropArtillery1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ThrobbingHand.cs(16,25): warning CS0649: Полю "ThrobbingHand._timeController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(44,21): warning CS0649: Полю "TimeController._pumping2g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ThrobbingHand.cs(13,17): warning CS0649: Полю "ThrobbingHand._button" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(14,21): warning CS0649: Полю "TimeController._slidingHand1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(19,26): warning CS0649: Полю "DragAndDropArtillery._timeController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(35,31): warning CS0649: Полю "TimeController._dragAndDropArtillery3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(29,31): warning CS0649: Полю "TimeController._dragAndDropArtillery1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(25,25): warning CS0649: Полю "DragAndDropArtillery._spawnLocation2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(11,22): warning CS0649: Полю "TimeController._videoPlayer" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
-
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(20,21): warning CS0649: Полю "TimeController._slidingHand1g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
   D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ThrobbingHand.cs(19,21): warning CS0649: Полю "ThrobbingHand._pumpingButton" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(53,31): warning CS0649: Полю "TimeController._dragAndDropArtillery2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\ForcePortrait.cs(6,21): warning CS0649: Полю "ForcePortrait._canvas1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(14,22): warning CS0649: Полю "TimeController._videoPlayer2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(22,25): warning CS0649: Полю "DragAndDropArtillery._spawnLocation" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(26,21): warning CS0649: Полю "TimeController._slidingHand2g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(56,31): warning CS0649: Полю "TimeController._dragAndDropArtillery2g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(38,21): warning CS0649: Полю "TimeController._pumping1g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\Timer.cs(10,21): warning CS0649: Полю "Timer._icons2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(23,21): warning CS0649: Полю "TimeController._slidingHand2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(32,21): warning CS0649: Полю "TimeController._slidingHand3g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(35,21): warning CS0649: Полю "TimeController._pumping1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(41,21): warning CS0649: Полю "TimeController._pumping2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(13,17): warning CS0649: Полю "DragAndDropArtillery._spritArtillery" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(16,24): warning CS0649: Полю "DragAndDropArtillery._ridingHands" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(29,21): warning CS0649: Полю "TimeController._slidingHand3" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\Timer.cs(7,21): warning CS0649: Полю "Timer._icons" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(25,25): warning CS0649: Полю "DragAndDropArtillery._spawnLocation2" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(50,31): warning CS0649: Полю "TimeController._dragAndDropArtillery1g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\DragAndDrop\DragAndDropArtillery.cs(19,26): warning CS0649: Полю "DragAndDropArtillery._timeController" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(11,22): warning CS0649: Полю "TimeController._videoPlayer" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(62,31): warning CS0649: Полю "TimeController._dragAndDropArtillery3g" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  D:\UnityPri\Artilery2.0\LunaTemp\Assemblies\stage_2\decompiled\TimeController.cs(17,21): warning CS0649: Полю "TimeController._slidingHand1" нигде не присваивается значение, поэтому оно всегда будет иметь значение по умолчанию null. [D:\Luna\PA\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
 
-    Предупреждений: 19
+
+    Предупреждений: 31
     Ошибок: 0
 
-
-Прошло времени 00:00:26.39
+Прошло времени 00:00:30.27
 
 Source code compiled successfully!
 ﻿
