@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ForcePortrait : MonoBehaviour
@@ -7,6 +8,10 @@ public class ForcePortrait : MonoBehaviour
 
     private bool _isPortrait;
 
+    public bool IsPortrait => _isPortrait;
+
+    public event Action IsPortraitChanged;
+
     void Start()
     {
         CheckOrientation();
@@ -14,6 +19,8 @@ public class ForcePortrait : MonoBehaviour
 
     void Update()
     {
+        //Debug.Log($"Текущая ориентация: {(Screen.height > Screen.width ? "Портрет" : "Альбом")}");
+
         if ((_isPortrait && Screen.width > Screen.height) ||
             (!_isPortrait && Screen.height > Screen.width))
         {
@@ -26,12 +33,14 @@ public class ForcePortrait : MonoBehaviour
         if (Screen.height > Screen.width) 
         {
             _isPortrait = true;
+            IsPortraitChanged?.Invoke();
             _canvas1.SetActive(true);
             _canvas2.SetActive(false);
         }
         else 
         {
             _isPortrait = false;
+            IsPortraitChanged?.Invoke();
             _canvas1.SetActive(false);
             _canvas2.SetActive(true);
         }

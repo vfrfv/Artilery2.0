@@ -8357,6 +8357,10 @@
             {
                 "name": "TMPro.TextMeshProUGUI",
                 "excluded": false
+            },
+            {
+                "name": "TimeController.ActiveHintType",
+                "excluded": false
             }
         ],
         "unusedMethods": [
@@ -21916,7 +21920,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDestroy",
@@ -22020,7 +22024,7 @@
                     },
                     {
                         "name": "RemoveRaycasters",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -22288,7 +22292,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnCanvasHierarchyChanged",
@@ -24057,6 +24061,18 @@
                     {
                         "name": "Update",
                         "excluded": false
+                    },
+                    {
+                        "name": "IsPortrait#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "CheckOrientation",
+                        "excluded": false
                     }
                 ]
             },
@@ -25464,6 +25480,18 @@
                     },
                     {
                         "name": "Pause6",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DisableHintDisplay",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OrientationCorrection",
                         "excluded": false
                     }
                 ]

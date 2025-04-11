@@ -515,22 +515,23 @@ Deserializers["TimeController"] = function (request, data, root) {
   request.r(i361[0], i361[1], 0, i360, '_timer')
   request.r(i361[2], i361[3], 0, i360, '_videoPlayer')
   request.r(i361[4], i361[5], 0, i360, '_videoPlayer2')
-  request.r(i361[6], i361[7], 0, i360, '_slidingHand1')
-  request.r(i361[8], i361[9], 0, i360, '_slidingHand1g')
-  request.r(i361[10], i361[11], 0, i360, '_slidingHand2')
-  request.r(i361[12], i361[13], 0, i360, '_slidingHand2g')
-  request.r(i361[14], i361[15], 0, i360, '_slidingHand3')
-  request.r(i361[16], i361[17], 0, i360, '_slidingHand3g')
-  request.r(i361[18], i361[19], 0, i360, '_pumping1')
-  request.r(i361[20], i361[21], 0, i360, '_pumping1g')
-  request.r(i361[22], i361[23], 0, i360, '_pumping2')
-  request.r(i361[24], i361[25], 0, i360, '_pumping2g')
-  request.r(i361[26], i361[27], 0, i360, '_dragAndDropArtillery1')
-  request.r(i361[28], i361[29], 0, i360, '_dragAndDropArtillery1g')
-  request.r(i361[30], i361[31], 0, i360, '_dragAndDropArtillery2')
-  request.r(i361[32], i361[33], 0, i360, '_dragAndDropArtillery2g')
-  request.r(i361[34], i361[35], 0, i360, '_dragAndDropArtillery3')
-  request.r(i361[36], i361[37], 0, i360, '_dragAndDropArtillery3g')
+  request.r(i361[6], i361[7], 0, i360, '_forcePortrait')
+  request.r(i361[8], i361[9], 0, i360, '_slidingHand1')
+  request.r(i361[10], i361[11], 0, i360, '_slidingHand1g')
+  request.r(i361[12], i361[13], 0, i360, '_slidingHand2')
+  request.r(i361[14], i361[15], 0, i360, '_slidingHand2g')
+  request.r(i361[16], i361[17], 0, i360, '_slidingHand3')
+  request.r(i361[18], i361[19], 0, i360, '_slidingHand3g')
+  request.r(i361[20], i361[21], 0, i360, '_pumping1')
+  request.r(i361[22], i361[23], 0, i360, '_pumping1g')
+  request.r(i361[24], i361[25], 0, i360, '_pumping2')
+  request.r(i361[26], i361[27], 0, i360, '_pumping2g')
+  request.r(i361[28], i361[29], 0, i360, '_dragAndDropArtillery1')
+  request.r(i361[30], i361[31], 0, i360, '_dragAndDropArtillery1g')
+  request.r(i361[32], i361[33], 0, i360, '_dragAndDropArtillery2')
+  request.r(i361[34], i361[35], 0, i360, '_dragAndDropArtillery2g')
+  request.r(i361[36], i361[37], 0, i360, '_dragAndDropArtillery3')
+  request.r(i361[38], i361[39], 0, i360, '_dragAndDropArtillery3g')
   return i360
 }
 
@@ -1142,7 +1143,7 @@ Deserializers.productName = "Artilery2.0";
 
 Deserializers.lunaInitializationTime = "04/04/2025 13:22:27";
 
-Deserializers.lunaDaysRunning = "6.0";
+Deserializers.lunaDaysRunning = "6.9";
 
 Deserializers.lunaVersion = "6.2.1";
 
@@ -1174,7 +1175,7 @@ Deserializers.isRuntimeAnalysisEnabledForCode = "False";
 
 Deserializers.runtimeAnalysisExcludedClassesCount = "1745";
 
-Deserializers.runtimeAnalysisExcludedMethodsCount = "3422";
+Deserializers.runtimeAnalysisExcludedMethodsCount = "3419";
 
 Deserializers.runtimeAnalysisExcludedModules = "physics3d, particle-system, reflection, mecanim-wasm";
 
@@ -1198,7 +1199,7 @@ Deserializers.graphicsConstraint = 28;
 
 Deserializers.linearColorSpace = false;
 
-Deserializers.buildID = "3960dc4f-5c94-46eb-a649-2f5808e97d47";
+Deserializers.buildID = "a650bfad-4ffc-4c45-8cd0-a32b30dc632f";
 
 Deserializers.runtimeInitializeOnLoadInfos = [[["UnityEngine","Experimental","Rendering","ScriptableRuntimeReflectionSystemSettings","ScriptingDirtyReflectionSystemInstance"]],[["Unity","VisualScripting","RuntimeVSUsageUtility","RuntimeInitializeOnLoadBeforeSceneLoad"]],[["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"],["$BurstDirectCallInitializer","Initialize"]],[],[]];
 

@@ -47,6 +47,7 @@ public class ThrobbingHand : MonoBehaviour
 	private void Pumping()
 	{
 		_timeController.PlayGame();
+		_timeController.DisableHintDisplay();
 		_pumpingButton.gameObject.SetActive(false);
 		base.gameObject.SetActive(false);
 	}

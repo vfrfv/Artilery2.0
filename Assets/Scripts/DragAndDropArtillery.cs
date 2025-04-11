@@ -31,6 +31,11 @@ namespace DragAndDrop
             _isActive = true;
         }
 
+        public void Deactivate()
+        {
+            _isActive = false;
+        }
+
         public void OnBeginDrag(PointerEventData eventData)
         {
             if (_isActive == false) return;
@@ -61,6 +66,7 @@ namespace DragAndDrop
             if (FindSpawnLocation())
             {
                 _timeController.PlayGame();
+                _timeController.DisableHintDisplay();
 
                 _spritArtilleryInstance.gameObject.SetActive(false);
 

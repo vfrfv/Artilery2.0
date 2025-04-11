@@ -72,6 +72,7 @@ namespace DragAndDrop
 			if (FindSpawnLocation())
 			{
 				_timeController.PlayGame();
+				_timeController.DisableHintDisplay();
 				_spritArtilleryInstance.gameObject.SetActive(false);
 				if (!_isReplay)
 				{
