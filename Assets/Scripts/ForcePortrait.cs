@@ -19,8 +19,6 @@ public class ForcePortrait : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log($"Текущая ориентация: {(Screen.height > Screen.width ? "Портрет" : "Альбом")}");
-
         if ((_isPortrait && Screen.width > Screen.height) ||
             (!_isPortrait && Screen.height > Screen.width))
         {

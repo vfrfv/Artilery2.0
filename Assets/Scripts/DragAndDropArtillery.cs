@@ -87,6 +87,32 @@ namespace DragAndDrop
             _spritArtilleryInstance.gameObject.SetActive(false);
         }
 
+        public void Location2()
+        {
+            _isReplay = true;
+        }
+
+        public void ResetDrag()
+        {
+            if (_spritArtilleryInstance != null)
+            {
+                Destroy(_spritArtilleryInstance.gameObject);
+                _spritArtilleryInstance = null;
+            }
+
+            if (_isReplay == false)
+            {
+                _spawnLocation.gameObject.SetActive(false);
+            }
+            else
+            {
+                if (_spawnLocation2 != null)
+                {
+                    _spawnLocation2.gameObject.SetActive(false);
+                }
+            }
+        }
+
         private bool FindSpawnLocation()
         {
             PointerEventData pointerData = new PointerEventData(EventSystem.current)

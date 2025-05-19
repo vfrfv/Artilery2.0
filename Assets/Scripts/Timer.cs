@@ -1,10 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
     [SerializeField] private GameObject _icons;
     [SerializeField] private GameObject _icons2;
+    [SerializeField] private Button _button;
+    [SerializeField] private Button _button2;
 
     private float _timeElapsed;
     private bool _isRunning = false;
@@ -27,6 +30,8 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
+        _button.gameObject.SetActive(false);
+        _button2.gameObject.SetActive(false);
         StartTimer();
     }
 
@@ -102,6 +107,8 @@ public class Timer : MonoBehaviour
         {
             _icons.gameObject.SetActive(false);
             _icons2.gameObject.SetActive(false);
+            _button.gameObject.SetActive(true);
+            _button2.gameObject.SetActive(true);
         }
     }
 

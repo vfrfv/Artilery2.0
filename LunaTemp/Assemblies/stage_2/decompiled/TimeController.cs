@@ -75,6 +75,9 @@ public class TimeController : MonoBehaviour
 	[SerializeField]
 	private DragAndDropArtillery _dragAndDropArtillery3g;
 
+	[SerializeField]
+	private Spawnlocation[] _spawnLocations;
+
 	private bool _isPause1 = false;
 
 	private bool _isPause2 = false;
@@ -88,6 +91,8 @@ public class TimeController : MonoBehaviour
 	private bool _isPause6 = false;
 
 	private bool _isShowsHints = false;
+
+	private bool _isPumping = false;
 
 	private ActiveHintType _activeHint = ActiveHintType.None;
 
@@ -110,6 +115,10 @@ public class TimeController : MonoBehaviour
 		_timer.StopVideo4 -= Pause1;
 		_timer.StopVideo5 -= Pause5;
 		_timer.StopVideo6 -= Pause6;
+	}
+
+	private void Start()
+	{
 		_forcePortrait.IsPortraitChanged += OrientationCorrection;
 	}
 
@@ -137,6 +146,11 @@ public class TimeController : MonoBehaviour
 		_isShowsHints = false;
 	}
 
+	public void DisablePumpingDisplay()
+	{
+		_isPumping = false;
+	}
+
 	private void Pause1()
 	{
 		if (!_isPause1)
@@ -158,6 +172,8 @@ public class TimeController : MonoBehaviour
 		}
 		else if (_isPause1 && !_isPause4)
 		{
+			_dragAndDropArtillery1g.Location2();
+			_dragAndDropArtillery1.Location2();
 			_isShowsHints = true;
 			_activeHint = ActiveHintType.Hint4;
 			Stop();
@@ -201,6 +217,7 @@ public class TimeController : MonoBehaviour
 		if (!_isPause3)
 		{
 			_isShowsHints = true;
+			_isPumping = true;
 			_activeHint = ActiveHintType.Hint3;
 			Stop();
 			if (_forcePortrait.IsPortrait)
@@ -220,6 +237,7 @@ public class TimeController : MonoBehaviour
 		if (!_isPause5)
 		{
 			_isShowsHints = true;
+			_isPumping = true;
 			_activeHint = ActiveHintType.Hint5;
 			Stop();
 			if (_forcePortrait.IsPortrait)
@@ -261,6 +279,16 @@ public class TimeController : MonoBehaviour
 		{
 			return;
 		}
+		ResetHints();
+		if (!_isPumping)
+		{
+			_dragAndDropArtillery1.ResetDrag();
+			_dragAndDropArtillery1g.ResetDrag();
+			_dragAndDropArtillery2.ResetDrag();
+			_dragAndDropArtillery2g.ResetDrag();
+			_dragAndDropArtillery3.ResetDrag();
+			_dragAndDropArtillery3g.ResetDrag();
+		}
 		switch (_activeHint)
 		{
 		case ActiveHintType.Hint1:
@@ -292,12 +320,44 @@ public class TimeController : MonoBehaviour
 			}
 			break;
 		case ActiveHintType.Hint3:
-			_pumping1.SetActive(_forcePortrait.IsPortrait);
-			_pumping1g.SetActive(!_forcePortrait.IsPortrait);
+			if (_forcePortrait.IsPortrait)
+			{
+				_pumping1.SetActive(true);
+				_pumping1g.SetActive(false);
+			}
+			else
+			{
+				_pumping1g.SetActive(true);
+				_pumping1.SetActive(false);
+			}
+			_dragAndDropArtillery1g.Location2();
+			_dragAndDropArtillery1.Location2();
+			break;
+		case ActiveHintType.Hint4:
+			if (_forcePortrait.IsPortrait)
+			{
+				_dragAndDropArtillery1.Activate();
+				_slidingHand1.gameObject.SetActive(true);
+				_slidingHand1g.gameObject.SetActive(false);
+			}
+			else
+			{
+				_dragAndDropArtillery1g.Activate();
+				_slidingHand1.gameObject.SetActive(false);
+				_slidingHand1g.gameObject.SetActive(true);
+			}
 			break;
 		case ActiveHintType.Hint5:
-			_pumping2.SetActive(_forcePortrait.IsPortrait);
-			_pumping2g.SetActive(!_forcePortrait.IsPortrait);
+			if (_forcePortrait.IsPortrait)
+			{
+				_pumping2.SetActive(true);
+				_pumping2g.SetActive(false);
+			}
+			else
+			{
+				_pumping2g.SetActive(true);
+				_pumping2.SetActive(false);
+			}
 			break;
 		case ActiveHintType.Hint6:
 			if (_forcePortrait.IsPortrait)
@@ -313,8 +373,20 @@ public class TimeController : MonoBehaviour
 				_slidingHand3g.gameObject.SetActive(true);
 			}
 			break;
-		case ActiveHintType.Hint4:
-			break;
 		}
+	}
+
+	private void ResetHints()
+	{
+		_slidingHand1.gameObject.SetActive(false);
+		_slidingHand1g.gameObject.SetActive(false);
+		_slidingHand2.gameObject.SetActive(false);
+		_slidingHand2g.gameObject.SetActive(false);
+		_slidingHand3.gameObject.SetActive(false);
+		_slidingHand3g.gameObject.SetActive(false);
+		_pumping1.SetActive(false);
+		_pumping1g.SetActive(false);
+		_pumping2.SetActive(false);
+		_pumping2g.SetActive(false);
 	}
 }

@@ -1,9 +1,27 @@
-if ( TRACE ) { TRACE( JSON.parse( '["DragAndDrop.DragAndDropArtillery#init","DragAndDrop.DragAndDropArtillery#Awake","DragAndDrop.DragAndDropArtillery#Activate","DragAndDrop.DragAndDropArtillery#OnBeginDrag","DragAndDrop.DragAndDropArtillery#OnDrag","DragAndDrop.DragAndDropArtillery#OnEndDrag","DragAndDrop.DragAndDropArtillery#FindSpawnLocation","DragAndDrop.DragAndDropArtillery#TurnHands","ForcePortrait#IsPortrait#get","ForcePortrait#Start","ForcePortrait#Update","ForcePortrait#CheckOrientation","RidingHand#init","RidingHand#Start","RidingHand#Update","Spawnlocation#Start","Spawnlocation#Update","ThrobbingHand#init","ThrobbingHand#OnEnable","ThrobbingHand#OnDisable","ThrobbingHand#Start","ThrobbingHand#Update","ThrobbingHand#Pumping","TimeController#init","TimeController#OnEnable","TimeController#OnDisable","TimeController#Stop","TimeController#Play","TimeController#PlayGame","TimeController#DisableHintDisplay","TimeController#Pause1","TimeController#Pause2","TimeController#Pause3","TimeController#Pause5","TimeController#Pause6","TimeController#OrientationCorrection","Timer#TimeElapsed#get","Timer#init","Timer#Start","Timer#Update","Timer#StartTimer","Timer#StopTimer","Timer#UpdateTimerDisplay"]' ) ); }
+if ( TRACE ) { TRACE( JSON.parse( '["ClickCta#Click","DragAndDrop.DragAndDropArtillery#init","DragAndDrop.DragAndDropArtillery#Awake","DragAndDrop.DragAndDropArtillery#Activate","DragAndDrop.DragAndDropArtillery#Deactivate","DragAndDrop.DragAndDropArtillery#OnBeginDrag","DragAndDrop.DragAndDropArtillery#OnDrag","DragAndDrop.DragAndDropArtillery#OnEndDrag","DragAndDrop.DragAndDropArtillery#Location2","DragAndDrop.DragAndDropArtillery#ResetDrag","DragAndDrop.DragAndDropArtillery#FindSpawnLocation","DragAndDrop.DragAndDropArtillery#TurnHands","ForcePortrait#IsPortrait#get","ForcePortrait#Start","ForcePortrait#Update","ForcePortrait#CheckOrientation","RidingHand#init","RidingHand#Start","RidingHand#Update","Spawnlocation#Start","Spawnlocation#Update","ThrobbingHand#init","ThrobbingHand#OnEnable","ThrobbingHand#OnDisable","ThrobbingHand#Start","ThrobbingHand#Update","ThrobbingHand#Pumping","TimeController#init","TimeController#OnEnable","TimeController#OnDisable","TimeController#Start","TimeController#Stop","TimeController#Play","TimeController#PlayGame","TimeController#DisableHintDisplay","TimeController#DisablePumpingDisplay","TimeController#Pause1","TimeController#Pause2","TimeController#Pause3","TimeController#Pause5","TimeController#Pause6","TimeController#OrientationCorrection","TimeController#ResetHints","Timer#TimeElapsed#get","Timer#init","Timer#Start","Timer#Update","Timer#StartTimer","Timer#StopTimer","Timer#UpdateTimerDisplay"]' ) ); }
 /**
  * @compiler Bridge.NET 17.9.42-luna
  */
 Bridge.assembly("UnityScriptsCompiler", function ($asm, globals) {
     "use strict";
+
+    /*ClickCta start.*/
+    Bridge.define("ClickCta", {
+        inherits: [UnityEngine.MonoBehaviour],
+        methods: {
+            /*ClickCta.Click start.*/
+            Click: function () {
+if ( TRACE ) { TRACE( "ClickCta#Click", this ); }
+
+                Luna.Unity.Playable.InstallFullGame();
+                UnityEngine.Debug.Log$1("\u041a\u043b\u0438\u043a");
+            },
+            /*ClickCta.Click end.*/
+
+
+        }
+    });
+    /*ClickCta end.*/
 
     /*DragAndDrop.DragAndDropArtillery start.*/
     Bridge.define("DragAndDrop.DragAndDropArtillery", {
@@ -53,6 +71,14 @@ if ( TRACE ) { TRACE( "DragAndDrop.DragAndDropArtillery#Activate", this ); }
             },
             /*DragAndDrop.DragAndDropArtillery.Activate end.*/
 
+            /*DragAndDrop.DragAndDropArtillery.Deactivate start.*/
+            Deactivate: function () {
+if ( TRACE ) { TRACE( "DragAndDrop.DragAndDropArtillery#Deactivate", this ); }
+
+                this._isActive = false;
+            },
+            /*DragAndDrop.DragAndDropArtillery.Deactivate end.*/
+
             /*DragAndDrop.DragAndDropArtillery.OnBeginDrag start.*/
             OnBeginDrag: function (eventData) {
 if ( TRACE ) { TRACE( "DragAndDrop.DragAndDropArtillery#OnBeginDrag", this ); }
@@ -99,6 +125,30 @@ if ( TRACE ) { TRACE( "DragAndDrop.DragAndDropArtillery#OnEndDrag", this ); }
                 this._spritArtilleryInstance.gameObject.SetActive(false);
             },
             /*DragAndDrop.DragAndDropArtillery.OnEndDrag end.*/
+
+            /*DragAndDrop.DragAndDropArtillery.Location2 start.*/
+            Location2: function () {
+if ( TRACE ) { TRACE( "DragAndDrop.DragAndDropArtillery#Location2", this ); }
+
+                this._isReplay = true;
+            },
+            /*DragAndDrop.DragAndDropArtillery.Location2 end.*/
+
+            /*DragAndDrop.DragAndDropArtillery.ResetDrag start.*/
+            ResetDrag: function () {
+if ( TRACE ) { TRACE( "DragAndDrop.DragAndDropArtillery#ResetDrag", this ); }
+
+                if (UnityEngine.MonoBehaviour.op_Inequality(this._spritArtilleryInstance, null)) {
+                    UnityEngine.Object.Destroy(this._spritArtilleryInstance.gameObject);
+                    this._spritArtilleryInstance = null;
+                }
+                if (!this._isReplay) {
+                    this._spawnLocation.gameObject.SetActive(false);
+                } else if (UnityEngine.MonoBehaviour.op_Inequality(this._spawnLocation2, null)) {
+                    this._spawnLocation2.gameObject.SetActive(false);
+                }
+            },
+            /*DragAndDrop.DragAndDropArtillery.ResetDrag end.*/
 
             /*DragAndDrop.DragAndDropArtillery.FindSpawnLocation start.*/
             FindSpawnLocation: function () {
@@ -337,6 +387,7 @@ if ( TRACE ) { TRACE( "ThrobbingHand#Pumping", this ); }
 
                 this._timeController.PlayGame();
                 this._timeController.DisableHintDisplay();
+                this._timeController.DisablePumpingDisplay();
                 this._pumpingButton.gameObject.SetActive(false);
                 Bridge.ensureBaseProperty(this, "gameObject").$UnityEngine$Component$gameObject.SetActive(false);
             },
@@ -371,6 +422,7 @@ if ( TRACE ) { TRACE( "ThrobbingHand#Pumping", this ); }
             _dragAndDropArtillery2g: null,
             _dragAndDropArtillery3: null,
             _dragAndDropArtillery3g: null,
+            _spawnLocations: null,
             _isPause1: false,
             _isPause2: false,
             _isPause3: false,
@@ -378,6 +430,7 @@ if ( TRACE ) { TRACE( "ThrobbingHand#Pumping", this ); }
             _isPause5: false,
             _isPause6: false,
             _isShowsHints: false,
+            _isPumping: false,
             _activeHint: 0
         },
         ctors: {
@@ -391,6 +444,7 @@ if ( TRACE ) { TRACE( "TimeController#init", this ); }
                 this._isPause5 = false;
                 this._isPause6 = false;
                 this._isShowsHints = false;
+                this._isPumping = false;
                 this._activeHint = TimeController.ActiveHintType.None;
             }
         },
@@ -419,9 +473,16 @@ if ( TRACE ) { TRACE( "TimeController#OnDisable", this ); }
                 this._timer.removeStopVideo4(Bridge.fn.cacheBind(this, this.Pause1));
                 this._timer.removeStopVideo5(Bridge.fn.cacheBind(this, this.Pause5));
                 this._timer.removeStopVideo6(Bridge.fn.cacheBind(this, this.Pause6));
-                this._forcePortrait.addIsPortraitChanged(Bridge.fn.cacheBind(this, this.OrientationCorrection));
             },
             /*TimeController.OnDisable end.*/
+
+            /*TimeController.Start start.*/
+            Start: function () {
+if ( TRACE ) { TRACE( "TimeController#Start", this ); }
+
+                this._forcePortrait.addIsPortraitChanged(Bridge.fn.cacheBind(this, this.OrientationCorrection));
+            },
+            /*TimeController.Start end.*/
 
             /*TimeController.Stop start.*/
             Stop: function () {
@@ -459,6 +520,14 @@ if ( TRACE ) { TRACE( "TimeController#DisableHintDisplay", this ); }
             },
             /*TimeController.DisableHintDisplay end.*/
 
+            /*TimeController.DisablePumpingDisplay start.*/
+            DisablePumpingDisplay: function () {
+if ( TRACE ) { TRACE( "TimeController#DisablePumpingDisplay", this ); }
+
+                this._isPumping = false;
+            },
+            /*TimeController.DisablePumpingDisplay end.*/
+
             /*TimeController.Pause1 start.*/
             Pause1: function () {
 if ( TRACE ) { TRACE( "TimeController#Pause1", this ); }
@@ -476,6 +545,8 @@ if ( TRACE ) { TRACE( "TimeController#Pause1", this ); }
                     }
                     this._isPause1 = true;
                 } else if (this._isPause1 && !this._isPause4) {
+                    this._dragAndDropArtillery1g.Location2();
+                    this._dragAndDropArtillery1.Location2();
                     this._isShowsHints = true;
                     this._activeHint = TimeController.ActiveHintType.Hint4;
                     this.Stop();
@@ -517,6 +588,7 @@ if ( TRACE ) { TRACE( "TimeController#Pause3", this ); }
 
                 if (!this._isPause3) {
                     this._isShowsHints = true;
+                    this._isPumping = true;
                     this._activeHint = TimeController.ActiveHintType.Hint3;
                     this.Stop();
                     if (this._forcePortrait.IsPortrait) {
@@ -535,6 +607,7 @@ if ( TRACE ) { TRACE( "TimeController#Pause5", this ); }
 
                 if (!this._isPause5) {
                     this._isShowsHints = true;
+                    this._isPumping = true;
                     this._activeHint = TimeController.ActiveHintType.Hint5;
                     this.Stop();
                     if (this._forcePortrait.IsPortrait) {
@@ -574,6 +647,15 @@ if ( TRACE ) { TRACE( "TimeController#OrientationCorrection", this ); }
                 if (!this._isShowsHints || this._activeHint === TimeController.ActiveHintType.None) {
                     return;
                 }
+                this.ResetHints();
+                if (!this._isPumping) {
+                    this._dragAndDropArtillery1.ResetDrag();
+                    this._dragAndDropArtillery1g.ResetDrag();
+                    this._dragAndDropArtillery2.ResetDrag();
+                    this._dragAndDropArtillery2g.ResetDrag();
+                    this._dragAndDropArtillery3.ResetDrag();
+                    this._dragAndDropArtillery3g.ResetDrag();
+                }
                 switch (this._activeHint) {
                     case TimeController.ActiveHintType.Hint1: 
                         if (this._forcePortrait.IsPortrait) {
@@ -598,12 +680,35 @@ if ( TRACE ) { TRACE( "TimeController#OrientationCorrection", this ); }
                         }
                         break;
                     case TimeController.ActiveHintType.Hint3: 
-                        this._pumping1.SetActive(this._forcePortrait.IsPortrait);
-                        this._pumping1g.SetActive(!this._forcePortrait.IsPortrait);
+                        if (this._forcePortrait.IsPortrait) {
+                            this._pumping1.SetActive(true);
+                            this._pumping1g.SetActive(false);
+                        } else {
+                            this._pumping1g.SetActive(true);
+                            this._pumping1.SetActive(false);
+                        }
+                        this._dragAndDropArtillery1g.Location2();
+                        this._dragAndDropArtillery1.Location2();
+                        break;
+                    case TimeController.ActiveHintType.Hint4: 
+                        if (this._forcePortrait.IsPortrait) {
+                            this._dragAndDropArtillery1.Activate();
+                            this._slidingHand1.gameObject.SetActive(true);
+                            this._slidingHand1g.gameObject.SetActive(false);
+                        } else {
+                            this._dragAndDropArtillery1g.Activate();
+                            this._slidingHand1.gameObject.SetActive(false);
+                            this._slidingHand1g.gameObject.SetActive(true);
+                        }
                         break;
                     case TimeController.ActiveHintType.Hint5: 
-                        this._pumping2.SetActive(this._forcePortrait.IsPortrait);
-                        this._pumping2g.SetActive(!this._forcePortrait.IsPortrait);
+                        if (this._forcePortrait.IsPortrait) {
+                            this._pumping2.SetActive(true);
+                            this._pumping2g.SetActive(false);
+                        } else {
+                            this._pumping2g.SetActive(true);
+                            this._pumping2.SetActive(false);
+                        }
                         break;
                     case TimeController.ActiveHintType.Hint6: 
                         if (this._forcePortrait.IsPortrait) {
@@ -616,11 +721,26 @@ if ( TRACE ) { TRACE( "TimeController#OrientationCorrection", this ); }
                             this._slidingHand3g.gameObject.SetActive(true);
                         }
                         break;
-                    case TimeController.ActiveHintType.Hint4: 
-                        break;
                 }
             },
             /*TimeController.OrientationCorrection end.*/
+
+            /*TimeController.ResetHints start.*/
+            ResetHints: function () {
+if ( TRACE ) { TRACE( "TimeController#ResetHints", this ); }
+
+                this._slidingHand1.gameObject.SetActive(false);
+                this._slidingHand1g.gameObject.SetActive(false);
+                this._slidingHand2.gameObject.SetActive(false);
+                this._slidingHand2g.gameObject.SetActive(false);
+                this._slidingHand3.gameObject.SetActive(false);
+                this._slidingHand3g.gameObject.SetActive(false);
+                this._pumping1.SetActive(false);
+                this._pumping1g.SetActive(false);
+                this._pumping2.SetActive(false);
+                this._pumping2g.SetActive(false);
+            },
+            /*TimeController.ResetHints end.*/
 
 
         }
@@ -650,6 +770,8 @@ if ( TRACE ) { TRACE( "TimeController#OrientationCorrection", this ); }
         fields: {
             _icons: null,
             _icons2: null,
+            _button: null,
+            _button2: null,
             _timeElapsed: 0,
             _isRunning: false,
             _isPausing1: false,
@@ -694,6 +816,8 @@ if ( TRACE ) { TRACE( "Timer#init", this ); }
             Start: function () {
 if ( TRACE ) { TRACE( "Timer#Start", this ); }
 
+                this._button.gameObject.SetActive(false);
+                this._button2.gameObject.SetActive(false);
                 this.StartTimer();
             },
             /*Timer.Start end.*/
@@ -737,6 +861,8 @@ if ( TRACE ) { TRACE( "Timer#Update", this ); }
                 if (this._timeElapsed >= 28.7) {
                     this._icons.gameObject.SetActive(false);
                     this._icons2.gameObject.SetActive(false);
+                    this._button.gameObject.SetActive(true);
+                    this._button2.gameObject.SetActive(true);
                 }
             },
             /*Timer.Update end.*/
@@ -775,6 +901,10 @@ if ( TRACE ) { TRACE( "Timer#UpdateTimerDisplay", this ); }
     var $m = Bridge.setMetadata,
         $n = ["System","UnityEngine","UnityEngine.UI","DragAndDrop","UnityEngine.Video","UnityEngine.EventSystems"];
 
+    /*ClickCta start.*/
+    $m("ClickCta", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Click","t":8,"sn":"Click","rt":$n[0].Void}]}; }, $n);
+    /*ClickCta end.*/
+
     /*ForcePortrait start.*/
     $m("ForcePortrait", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"CheckOrientation","t":8,"sn":"CheckOrientation","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":2,"n":"IsPortrait","t":16,"rt":$n[0].Boolean,"g":{"a":2,"n":"get_IsPortrait","t":8,"rt":$n[0].Boolean,"fg":"IsPortrait","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},"fn":"IsPortrait"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_canvas1","t":4,"rt":$n[1].GameObject,"sn":"_canvas1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_canvas2","t":4,"rt":$n[1].GameObject,"sn":"_canvas2"},{"a":1,"n":"_isPortrait","t":4,"rt":$n[0].Boolean,"sn":"_isPortrait","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"IsPortraitChanged","t":2,"ad":{"a":2,"n":"add_IsPortraitChanged","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addIsPortraitChanged","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_IsPortraitChanged","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeIsPortraitChanged","rt":$n[0].Void,"p":[Function]}}]}; }, $n);
     /*ForcePortrait end.*/
@@ -792,7 +922,7 @@ if ( TRACE ) { TRACE( "Timer#UpdateTimerDisplay", this ); }
     /*ThrobbingHand end.*/
 
     /*TimeController start.*/
-    $m("TimeController", function () { return {"nested":[TimeController.ActiveHintType],"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"DisableHintDisplay","t":8,"sn":"DisableHintDisplay","rt":$n[0].Void},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[0].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"OrientationCorrection","t":8,"sn":"OrientationCorrection","rt":$n[0].Void},{"a":1,"n":"Pause1","t":8,"sn":"Pause1","rt":$n[0].Void},{"a":1,"n":"Pause2","t":8,"sn":"Pause2","rt":$n[0].Void},{"a":1,"n":"Pause3","t":8,"sn":"Pause3","rt":$n[0].Void},{"a":1,"n":"Pause5","t":8,"sn":"Pause5","rt":$n[0].Void},{"a":1,"n":"Pause6","t":8,"sn":"Pause6","rt":$n[0].Void},{"a":1,"n":"Play","t":8,"sn":"Play","rt":$n[0].Void},{"a":2,"n":"PlayGame","t":8,"sn":"PlayGame","rt":$n[0].Void},{"a":1,"n":"Stop","t":8,"sn":"Stop","rt":$n[0].Void},{"a":1,"n":"_activeHint","t":4,"rt":TimeController.ActiveHintType,"sn":"_activeHint","box":function ($v) { return Bridge.box($v, TimeController.ActiveHintType, System.Enum.toStringFn(TimeController.ActiveHintType));}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_dragAndDropArtillery1","t":4,"rt":$n[3].DragAndDropArtillery,"sn":"_dragAndDropArtillery1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_dragAndDropArtillery1g","t":4,"rt":$n[3].DragAndDropArtillery,"sn":"_dragAndDropArtillery1g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_dragAndDropArtillery2","t":4,"rt":$n[3].DragAndDropArtillery,"sn":"_dragAndDropArtillery2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_dragAndDropArtillery2g","t":4,"rt":$n[3].DragAndDropArtillery,"sn":"_dragAndDropArtillery2g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_dragAndDropArtillery3","t":4,"rt":$n[3].DragAndDropArtillery,"sn":"_dragAndDropArtillery3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_dragAndDropArtillery3g","t":4,"rt":$n[3].DragAndDropArtillery,"sn":"_dragAndDropArtillery3g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_forcePortrait","t":4,"rt":ForcePortrait,"sn":"_forcePortrait"},{"a":1,"n":"_isPause1","t":4,"rt":$n[0].Boolean,"sn":"_isPause1","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPause2","t":4,"rt":$n[0].Boolean,"sn":"_isPause2","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPause3","t":4,"rt":$n[0].Boolean,"sn":"_isPause3","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPause4","t":4,"rt":$n[0].Boolean,"sn":"_isPause4","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPause5","t":4,"rt":$n[0].Boolean,"sn":"_isPause5","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPause6","t":4,"rt":$n[0].Boolean,"sn":"_isPause6","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isShowsHints","t":4,"rt":$n[0].Boolean,"sn":"_isShowsHints","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_pumping1","t":4,"rt":$n[1].GameObject,"sn":"_pumping1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_pumping1g","t":4,"rt":$n[1].GameObject,"sn":"_pumping1g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_pumping2","t":4,"rt":$n[1].GameObject,"sn":"_pumping2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_pumping2g","t":4,"rt":$n[1].GameObject,"sn":"_pumping2g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_slidingHand1","t":4,"rt":RidingHand,"sn":"_slidingHand1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_slidingHand1g","t":4,"rt":RidingHand,"sn":"_slidingHand1g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_slidingHand2","t":4,"rt":RidingHand,"sn":"_slidingHand2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_slidingHand2g","t":4,"rt":RidingHand,"sn":"_slidingHand2g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_slidingHand3","t":4,"rt":RidingHand,"sn":"_slidingHand3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_slidingHand3g","t":4,"rt":RidingHand,"sn":"_slidingHand3g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_timer","t":4,"rt":Timer,"sn":"_timer"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_videoPlayer","t":4,"rt":$n[4].VideoPlayer,"sn":"_videoPlayer"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_videoPlayer2","t":4,"rt":$n[4].VideoPlayer,"sn":"_videoPlayer2"}]}; }, $n);
+    $m("TimeController", function () { return {"nested":[TimeController.ActiveHintType],"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"DisableHintDisplay","t":8,"sn":"DisableHintDisplay","rt":$n[0].Void},{"a":2,"n":"DisablePumpingDisplay","t":8,"sn":"DisablePumpingDisplay","rt":$n[0].Void},{"a":1,"n":"OnDisable","t":8,"sn":"OnDisable","rt":$n[0].Void},{"a":1,"n":"OnEnable","t":8,"sn":"OnEnable","rt":$n[0].Void},{"a":1,"n":"OrientationCorrection","t":8,"sn":"OrientationCorrection","rt":$n[0].Void},{"a":1,"n":"Pause1","t":8,"sn":"Pause1","rt":$n[0].Void},{"a":1,"n":"Pause2","t":8,"sn":"Pause2","rt":$n[0].Void},{"a":1,"n":"Pause3","t":8,"sn":"Pause3","rt":$n[0].Void},{"a":1,"n":"Pause5","t":8,"sn":"Pause5","rt":$n[0].Void},{"a":1,"n":"Pause6","t":8,"sn":"Pause6","rt":$n[0].Void},{"a":1,"n":"Play","t":8,"sn":"Play","rt":$n[0].Void},{"a":2,"n":"PlayGame","t":8,"sn":"PlayGame","rt":$n[0].Void},{"a":1,"n":"ResetHints","t":8,"sn":"ResetHints","rt":$n[0].Void},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":1,"n":"Stop","t":8,"sn":"Stop","rt":$n[0].Void},{"a":1,"n":"_activeHint","t":4,"rt":TimeController.ActiveHintType,"sn":"_activeHint","box":function ($v) { return Bridge.box($v, TimeController.ActiveHintType, System.Enum.toStringFn(TimeController.ActiveHintType));}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_dragAndDropArtillery1","t":4,"rt":$n[3].DragAndDropArtillery,"sn":"_dragAndDropArtillery1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_dragAndDropArtillery1g","t":4,"rt":$n[3].DragAndDropArtillery,"sn":"_dragAndDropArtillery1g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_dragAndDropArtillery2","t":4,"rt":$n[3].DragAndDropArtillery,"sn":"_dragAndDropArtillery2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_dragAndDropArtillery2g","t":4,"rt":$n[3].DragAndDropArtillery,"sn":"_dragAndDropArtillery2g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_dragAndDropArtillery3","t":4,"rt":$n[3].DragAndDropArtillery,"sn":"_dragAndDropArtillery3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_dragAndDropArtillery3g","t":4,"rt":$n[3].DragAndDropArtillery,"sn":"_dragAndDropArtillery3g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_forcePortrait","t":4,"rt":ForcePortrait,"sn":"_forcePortrait"},{"a":1,"n":"_isPause1","t":4,"rt":$n[0].Boolean,"sn":"_isPause1","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPause2","t":4,"rt":$n[0].Boolean,"sn":"_isPause2","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPause3","t":4,"rt":$n[0].Boolean,"sn":"_isPause3","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPause4","t":4,"rt":$n[0].Boolean,"sn":"_isPause4","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPause5","t":4,"rt":$n[0].Boolean,"sn":"_isPause5","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPause6","t":4,"rt":$n[0].Boolean,"sn":"_isPause6","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPumping","t":4,"rt":$n[0].Boolean,"sn":"_isPumping","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isShowsHints","t":4,"rt":$n[0].Boolean,"sn":"_isShowsHints","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_pumping1","t":4,"rt":$n[1].GameObject,"sn":"_pumping1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_pumping1g","t":4,"rt":$n[1].GameObject,"sn":"_pumping1g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_pumping2","t":4,"rt":$n[1].GameObject,"sn":"_pumping2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_pumping2g","t":4,"rt":$n[1].GameObject,"sn":"_pumping2g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_slidingHand1","t":4,"rt":RidingHand,"sn":"_slidingHand1"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_slidingHand1g","t":4,"rt":RidingHand,"sn":"_slidingHand1g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_slidingHand2","t":4,"rt":RidingHand,"sn":"_slidingHand2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_slidingHand2g","t":4,"rt":RidingHand,"sn":"_slidingHand2g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_slidingHand3","t":4,"rt":RidingHand,"sn":"_slidingHand3"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_slidingHand3g","t":4,"rt":RidingHand,"sn":"_slidingHand3g"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_spawnLocations","t":4,"rt":System.Array.type(Spawnlocation),"sn":"_spawnLocations"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_timer","t":4,"rt":Timer,"sn":"_timer"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_videoPlayer","t":4,"rt":$n[4].VideoPlayer,"sn":"_videoPlayer"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_videoPlayer2","t":4,"rt":$n[4].VideoPlayer,"sn":"_videoPlayer2"}]}; }, $n);
     /*TimeController end.*/
 
     /*TimeController+ActiveHintType start.*/
@@ -800,11 +930,11 @@ if ( TRACE ) { TRACE( "Timer#UpdateTimerDisplay", this ); }
     /*TimeController+ActiveHintType end.*/
 
     /*Timer start.*/
-    $m("Timer", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"StartTimer","t":8,"sn":"StartTimer","rt":$n[0].Void},{"a":2,"n":"StopTimer","t":8,"sn":"StopTimer","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"UpdateTimerDisplay","t":8,"sn":"UpdateTimerDisplay","rt":$n[0].Void},{"a":2,"n":"TimeElapsed","t":16,"rt":$n[0].Single,"g":{"a":2,"n":"get_TimeElapsed","t":8,"rt":$n[0].Single,"fg":"TimeElapsed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},"fn":"TimeElapsed"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_icons","t":4,"rt":$n[1].GameObject,"sn":"_icons"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_icons2","t":4,"rt":$n[1].GameObject,"sn":"_icons2"},{"a":1,"n":"_isPausing1","t":4,"rt":$n[0].Boolean,"sn":"_isPausing1","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPausing2","t":4,"rt":$n[0].Boolean,"sn":"_isPausing2","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPausing3","t":4,"rt":$n[0].Boolean,"sn":"_isPausing3","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPausing4","t":4,"rt":$n[0].Boolean,"sn":"_isPausing4","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPausing5","t":4,"rt":$n[0].Boolean,"sn":"_isPausing5","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPausing6","t":4,"rt":$n[0].Boolean,"sn":"_isPausing6","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isRunning","t":4,"rt":$n[0].Boolean,"sn":"_isRunning","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_timeElapsed","t":4,"rt":$n[0].Single,"sn":"_timeElapsed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"StopVideo1","t":2,"ad":{"a":2,"n":"add_StopVideo1","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addStopVideo1","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_StopVideo1","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeStopVideo1","rt":$n[0].Void,"p":[Function]}},{"a":2,"n":"StopVideo2","t":2,"ad":{"a":2,"n":"add_StopVideo2","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addStopVideo2","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_StopVideo2","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeStopVideo2","rt":$n[0].Void,"p":[Function]}},{"a":2,"n":"StopVideo3","t":2,"ad":{"a":2,"n":"add_StopVideo3","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addStopVideo3","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_StopVideo3","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeStopVideo3","rt":$n[0].Void,"p":[Function]}},{"a":2,"n":"StopVideo4","t":2,"ad":{"a":2,"n":"add_StopVideo4","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addStopVideo4","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_StopVideo4","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeStopVideo4","rt":$n[0].Void,"p":[Function]}},{"a":2,"n":"StopVideo5","t":2,"ad":{"a":2,"n":"add_StopVideo5","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addStopVideo5","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_StopVideo5","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeStopVideo5","rt":$n[0].Void,"p":[Function]}},{"a":2,"n":"StopVideo6","t":2,"ad":{"a":2,"n":"add_StopVideo6","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addStopVideo6","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_StopVideo6","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeStopVideo6","rt":$n[0].Void,"p":[Function]}}]}; }, $n);
+    $m("Timer", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":1,"n":"Start","t":8,"sn":"Start","rt":$n[0].Void},{"a":2,"n":"StartTimer","t":8,"sn":"StartTimer","rt":$n[0].Void},{"a":2,"n":"StopTimer","t":8,"sn":"StopTimer","rt":$n[0].Void},{"a":1,"n":"Update","t":8,"sn":"Update","rt":$n[0].Void},{"a":1,"n":"UpdateTimerDisplay","t":8,"sn":"UpdateTimerDisplay","rt":$n[0].Void},{"a":2,"n":"TimeElapsed","t":16,"rt":$n[0].Single,"g":{"a":2,"n":"get_TimeElapsed","t":8,"rt":$n[0].Single,"fg":"TimeElapsed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},"fn":"TimeElapsed"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_button","t":4,"rt":$n[2].Button,"sn":"_button"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_button2","t":4,"rt":$n[2].Button,"sn":"_button2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_icons","t":4,"rt":$n[1].GameObject,"sn":"_icons"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_icons2","t":4,"rt":$n[1].GameObject,"sn":"_icons2"},{"a":1,"n":"_isPausing1","t":4,"rt":$n[0].Boolean,"sn":"_isPausing1","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPausing2","t":4,"rt":$n[0].Boolean,"sn":"_isPausing2","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPausing3","t":4,"rt":$n[0].Boolean,"sn":"_isPausing3","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPausing4","t":4,"rt":$n[0].Boolean,"sn":"_isPausing4","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPausing5","t":4,"rt":$n[0].Boolean,"sn":"_isPausing5","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isPausing6","t":4,"rt":$n[0].Boolean,"sn":"_isPausing6","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isRunning","t":4,"rt":$n[0].Boolean,"sn":"_isRunning","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_timeElapsed","t":4,"rt":$n[0].Single,"sn":"_timeElapsed","box":function ($v) { return Bridge.box($v, System.Single, System.Single.format, System.Single.getHashCode);}},{"a":2,"n":"StopVideo1","t":2,"ad":{"a":2,"n":"add_StopVideo1","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addStopVideo1","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_StopVideo1","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeStopVideo1","rt":$n[0].Void,"p":[Function]}},{"a":2,"n":"StopVideo2","t":2,"ad":{"a":2,"n":"add_StopVideo2","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addStopVideo2","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_StopVideo2","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeStopVideo2","rt":$n[0].Void,"p":[Function]}},{"a":2,"n":"StopVideo3","t":2,"ad":{"a":2,"n":"add_StopVideo3","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addStopVideo3","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_StopVideo3","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeStopVideo3","rt":$n[0].Void,"p":[Function]}},{"a":2,"n":"StopVideo4","t":2,"ad":{"a":2,"n":"add_StopVideo4","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addStopVideo4","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_StopVideo4","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeStopVideo4","rt":$n[0].Void,"p":[Function]}},{"a":2,"n":"StopVideo5","t":2,"ad":{"a":2,"n":"add_StopVideo5","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addStopVideo5","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_StopVideo5","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeStopVideo5","rt":$n[0].Void,"p":[Function]}},{"a":2,"n":"StopVideo6","t":2,"ad":{"a":2,"n":"add_StopVideo6","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"addStopVideo6","rt":$n[0].Void,"p":[Function]},"r":{"a":2,"n":"remove_StopVideo6","t":8,"pi":[{"n":"value","pt":Function,"ps":0}],"sn":"removeStopVideo6","rt":$n[0].Void,"p":[Function]}}]}; }, $n);
     /*Timer end.*/
 
     /*DragAndDrop.DragAndDropArtillery start.*/
-    $m("DragAndDrop.DragAndDropArtillery", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Activate","t":8,"sn":"Activate","rt":$n[0].Void},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":1,"n":"FindSpawnLocation","t":8,"sn":"FindSpawnLocation","rt":$n[0].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"OnBeginDrag","t":8,"pi":[{"n":"eventData","pt":$n[5].PointerEventData,"ps":0}],"sn":"OnBeginDrag","rt":$n[0].Void,"p":[$n[5].PointerEventData]},{"a":2,"n":"OnDrag","t":8,"pi":[{"n":"eventData","pt":$n[5].PointerEventData,"ps":0}],"sn":"OnDrag","rt":$n[0].Void,"p":[$n[5].PointerEventData]},{"a":2,"n":"OnEndDrag","t":8,"pi":[{"n":"eventData","pt":$n[5].PointerEventData,"ps":0}],"sn":"OnEndDrag","rt":$n[0].Void,"p":[$n[5].PointerEventData]},{"a":1,"n":"TurnHands","t":8,"sn":"TurnHands","rt":$n[0].Void},{"a":1,"n":"Hits","t":4,"rt":System.Array.type(UnityEngine.RaycastHit),"sn":"Hits","ro":true},{"a":1,"n":"_isActive","t":4,"rt":$n[0].Boolean,"sn":"_isActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isReplay","t":4,"rt":$n[0].Boolean,"sn":"_isReplay","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_mainCamera","t":4,"rt":$n[1].Camera,"sn":"_mainCamera"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_ridingHands","t":4,"rt":System.Array.type(RidingHand),"sn":"_ridingHands"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_spawnLocation","t":4,"rt":Spawnlocation,"sn":"_spawnLocation"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_spawnLocation2","t":4,"rt":Spawnlocation,"sn":"_spawnLocation2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_spritArtillery","t":4,"rt":$n[2].Image,"sn":"_spritArtillery"},{"a":1,"n":"_spritArtilleryInstance","t":4,"rt":$n[2].Image,"sn":"_spritArtilleryInstance"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_timeController","t":4,"rt":TimeController,"sn":"_timeController"}]}; }, $n);
+    $m("DragAndDrop.DragAndDropArtillery", function () { return {"att":1048577,"a":2,"m":[{"a":2,"isSynthetic":true,"n":".ctor","t":1,"sn":"ctor"},{"a":2,"n":"Activate","t":8,"sn":"Activate","rt":$n[0].Void},{"a":1,"n":"Awake","t":8,"sn":"Awake","rt":$n[0].Void},{"a":2,"n":"Deactivate","t":8,"sn":"Deactivate","rt":$n[0].Void},{"a":1,"n":"FindSpawnLocation","t":8,"sn":"FindSpawnLocation","rt":$n[0].Boolean,"box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":2,"n":"Location2","t":8,"sn":"Location2","rt":$n[0].Void},{"a":2,"n":"OnBeginDrag","t":8,"pi":[{"n":"eventData","pt":$n[5].PointerEventData,"ps":0}],"sn":"OnBeginDrag","rt":$n[0].Void,"p":[$n[5].PointerEventData]},{"a":2,"n":"OnDrag","t":8,"pi":[{"n":"eventData","pt":$n[5].PointerEventData,"ps":0}],"sn":"OnDrag","rt":$n[0].Void,"p":[$n[5].PointerEventData]},{"a":2,"n":"OnEndDrag","t":8,"pi":[{"n":"eventData","pt":$n[5].PointerEventData,"ps":0}],"sn":"OnEndDrag","rt":$n[0].Void,"p":[$n[5].PointerEventData]},{"a":2,"n":"ResetDrag","t":8,"sn":"ResetDrag","rt":$n[0].Void},{"a":1,"n":"TurnHands","t":8,"sn":"TurnHands","rt":$n[0].Void},{"a":1,"n":"Hits","t":4,"rt":System.Array.type(UnityEngine.RaycastHit),"sn":"Hits","ro":true},{"a":1,"n":"_isActive","t":4,"rt":$n[0].Boolean,"sn":"_isActive","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_isReplay","t":4,"rt":$n[0].Boolean,"sn":"_isReplay","box":function ($v) { return Bridge.box($v, System.Boolean, System.Boolean.toString);}},{"a":1,"n":"_mainCamera","t":4,"rt":$n[1].Camera,"sn":"_mainCamera"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_ridingHands","t":4,"rt":System.Array.type(RidingHand),"sn":"_ridingHands"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_spawnLocation","t":4,"rt":Spawnlocation,"sn":"_spawnLocation"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_spawnLocation2","t":4,"rt":Spawnlocation,"sn":"_spawnLocation2"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_spritArtillery","t":4,"rt":$n[2].Image,"sn":"_spritArtillery"},{"a":1,"n":"_spritArtilleryInstance","t":4,"rt":$n[2].Image,"sn":"_spritArtilleryInstance"},{"at":[new UnityEngine.SerializeFieldAttribute()],"a":1,"n":"_timeController","t":4,"rt":TimeController,"sn":"_timeController"}]}; }, $n);
     /*DragAndDrop.DragAndDropArtillery end.*/
 
     }});

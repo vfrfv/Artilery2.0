@@ -42,6 +42,11 @@ namespace DragAndDrop
 			_isActive = true;
 		}
 
+		public void Deactivate()
+		{
+			_isActive = false;
+		}
+
 		public void OnBeginDrag(PointerEventData eventData)
 		{
 			if (_isActive)
@@ -87,6 +92,28 @@ namespace DragAndDrop
 				_isActive = false;
 			}
 			_spritArtilleryInstance.gameObject.SetActive(false);
+		}
+
+		public void Location2()
+		{
+			_isReplay = true;
+		}
+
+		public void ResetDrag()
+		{
+			if (_spritArtilleryInstance != null)
+			{
+				Object.Destroy(_spritArtilleryInstance.gameObject);
+				_spritArtilleryInstance = null;
+			}
+			if (!_isReplay)
+			{
+				_spawnLocation.gameObject.SetActive(false);
+			}
+			else if (_spawnLocation2 != null)
+			{
+				_spawnLocation2.gameObject.SetActive(false);
+			}
 		}
 
 		private bool FindSpawnLocation()
